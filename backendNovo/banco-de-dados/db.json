@@ -1,0 +1,19 @@
+{
+    "suplementos": [
+        {
+            "suplemento_id": 1,
+            "nomeSuplemento": "Creatina",
+            "marca": "Black skill",
+            "valor": "79,99"
+        }
+    ],
+    "gymBros": [
+        {
+            "gymID": 1,
+            "nome": "Davi Maciel e Silva",
+            "email": "davimaciel077@gmail.com",
+            "telefone": "88997652424",
+            "senha": "1234"
+        }
+    ]
+}

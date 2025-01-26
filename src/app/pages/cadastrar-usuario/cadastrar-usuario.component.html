@@ -1,0 +1,37 @@
+<main>
+  <div class="formulario">
+    <h2>Cadastrar usuário</h2>
+    <form [formGroup]="formUser">
+      <div class="labels">
+        <label for="">Nome completo</label>
+        <input type="text"id="nome" formControlName="nome">
+        <div class="mensagem__erro" *ngIf="formUser.get('nome')?.errors?.['required'] && formUser.get('nome')?.touched">Campo obrigatório</div>
+      </div>
+      <div class="labels">
+        <label for="">Email</label>
+        <input type="text" id="usuario" formControlName="email">
+        <div class="mensagem__erro" *ngIf="formUser.get('email')?.errors?.['required'] && formUser.get('email')?.touched">Campo obrigatório</div>
+      </div>
+      <div class="labels">
+        <label for="">telefone</label>
+        <input type="text" id="telefone" formControlName="telefone">
+        <div class="mensagem__erro" *ngIf="formUser.get('telefone')?.errors?.['required'] && formUser.get('telefone')?.touched">Campo obrigatório</div>
+      </div>
+      <div class="labels">
+        <label for="">Senha</label>
+        <input type="password" id="password" formControlName="senha">
+        <div class="mensagem__erro" *ngIf="formUser.get('senha')?.errors?.['required'] && formUser.get('senha')?.touched">Campo obrigatório</div>
+      </div>
+      <button (click)="criarUsuario()">Cadastrar</button>
+    </form>
+    <div class="toglle">
+      <img src="../../../assets/imgs/logo/logop.png" alt="" srcset="">
+      <div class="lado-direito">
+        <p class="pergunta">já tem uma conta?</p>
+        <button class="button-login" (click)="entrar()">login</button>
+      </div>
+    </div>
+
+
+  </div>
+</main>

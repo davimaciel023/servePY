@@ -1,0 +1,87 @@
+section {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top left, white 50%, #FF7F50 40%);
+
+
+  .info {
+    min-height: 20vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h2{
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+  .listagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+
+  .tela-listagem {
+
+    background-color: white;
+    position: absolute;
+    top: 10rem;
+    width: 64%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    top: 7rem;
+  }
+
+
+  table {
+
+    width: 70%;
+
+    th, td{
+      font-size: 16px;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .icon {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      img {
+        min-height: 23px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .button-add{
+    position: absolute;
+    top: 24rem;
+    max-width: 55px;
+    left: 67rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    &:hover{
+      transform: scale(1.20);
+    }
+  }
+}
+
+
